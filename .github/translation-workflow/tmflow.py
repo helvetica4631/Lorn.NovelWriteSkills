@@ -53,7 +53,7 @@ elif cmd=='prep':         # prep REPO_PATH  -> prints missing lines
             if norm(l) in tm: part[i]=tm[norm(l)]
             elif zh0 and 'P::'+tkey(l,zh0) in tm and any(v in l for v in zvars(zh0)): part[i]=tm['P::'+tkey(l,zh0)].replace('{P}',ru0).replace('{Z}',zh0)
     open(os.path.join(S,'part_'+key(path)+'.tsv'),'w',encoding='utf-8').write('\n'.join(f'{n}\t{t}' for n,t in sorted(part.items()))+'\n')
-    miss=[(i,l) for i,l in enumerate(lines,1) if han(l) and i not in part and not l.startswith(('name:','tools:')) and not re.match(r'^\s*(- |\d+\. )?`[^`]+`\s*$',l) and not re.match(r'^# 通用-',l)]
+    miss=[(i,l) for i,l in enumerate(lines,1) if han(l) and i not in part and not l.startswith(('name:','tools:')) and not re.match(r'^\s*(- |\d+\. )?`[^`\s→]+`\s*$',l) and not re.match(r'^# 通用-',l)]
     print(f'# {path}: {len(lines)} lines, {len(part)} from TM, {len(miss)} to translate')
     for i,l in miss: print(f'{i}\t{l}')
 elif cmd=='done':         # done REPO_PATH EXTRA_TSV

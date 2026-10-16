@@ -60,7 +60,11 @@
 ## Статус перевода
 - [x] `.github/instructions/*` и `<жанр>/instructions/*`
 - [x] `<жанр>/agents/*` (15 файлов, 6 жанров)
-- [ ] `CommonSkills/` (включая `通用-深度研究/agents/`)
-- [ ] Жанровые `skills/`
-- [ ] `.github/skills/create-genre-skill-skeletons/`
-- Не переводятся: `scripts/`, `prompts/`, `写作研究/`, README.
+- [x] `CommonSkills/README.md`, `短篇小说集最佳实践.md`, `长篇小说最佳实践.md`
+- [x] `CommonSkills/通用-输出*版/` — все 16 платформенных Skill (SKILL.md + references)
+- [ ] `CommonSkills/通用-*` (остальные 41 общий Skill, ≈1,1 млн иероглифов)
+- [ ] `CommonSkills/通用-深度研究/agents/*`
+- [ ] Жанровые `skills/` (≈0,85 млн иероглифов)
+- [ ] `小说分发/`, `.github/skills/create-genre-skill-skeletons/`, `支持平台.md`, `海外小说平台.md`
+- Не переводятся без отдельной просьбы: `scripts/`, `prompts/`, `写作研究/` (≈7 млн иероглифов отчётов-исследований), сторонние проекты внутри `通用-去AI味重写/` (`shuorenhua-main`, `Humanizer-zh-main`), семь корпусов «好词好句好段» в `通用-正文润色/references/` (китайские образцы прозы).
+- Правило для китайских примеров: короткие образцы фраз / списки слов, на которых строится работа с китайским текстом, остаются по-китайски с русским пояснением.

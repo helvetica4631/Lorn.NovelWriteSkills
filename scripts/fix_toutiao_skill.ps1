@@ -6,7 +6,7 @@ $c = [System.IO.File]::ReadAllText($path)
 $start = $c.IndexOf("## 平台实战经验与成长建议（研究结论迁移）")
 $end = $c.IndexOf("`r`n## ", $start + 5)
 $oldBlock = $c.Substring($start, $end - $start)
-$newBlock = "## 平台实战经验与成长建议`r`n`r`n> 详情见 references/平台实战经验与成长建议.md。包含流量池分级、互动权重、开篇要求、读者画像与常见误区等平台研究数据，执行今日头条版改写前必须读取。"
+$newBlock = "## 平台实战经验与成长建议`r`n`r`n> 详情见 references/практический-опыт-платформы-и-советы-по-росту.md。包含流量池分级、互动权重、开篇要求、读者画像与常见误区等平台研究数据，执行今日头条版改写前必须读取。"
 $c = $c.Replace($oldBlock, $newBlock)
 
 # 2. Remove wrong duplicate section (历史迁移参考 with trigger words)
@@ -19,7 +19,7 @@ $c = $c.Replace($bad, "`r`n")
 $start3 = $c.IndexOf("`r`n## POV 选择指南（如无显式契约）")
 $end3 = $c.IndexOf("`r`n## 默认输出口径", $start3)
 $oldPov = $c.Substring($start3, $end3 - $start3)
-$newPov = "`r`n## POV 选择指南（如无显式契约）`r`n`r`n> 详情见 references/POV选择指南.md。包含今日头条版人称适用场景分析与基线表创建说明，无上游契约时必须读取。"
+$newPov = "`r`n## POV 选择指南（如无显式契约）`r`n`r`n> 详情见 references/руководство-по-выбору-pov.md。包含今日头条版人称适用场景分析与基线表创建说明，无上游契约时必须读取。"
 $c = $c.Replace($oldPov, $newPov)
 
 [System.IO.File]::WriteAllText($path, $c)

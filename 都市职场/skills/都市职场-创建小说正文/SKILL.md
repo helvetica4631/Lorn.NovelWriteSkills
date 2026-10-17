@@ -35,7 +35,7 @@ user-invocable: false
 
 - `references/题材正文创作补充规则.md`
 - `references/控制卡落正文与镜头化桥接.md`
-- `CommonSkills/общий-создание-основного-текста/references/章节附属构件与后记规范.md`（`
+- `CommonSkills/общий-создание-основного-текста/references/нормы-вспомогательных-элементов-главы-и-послесловия.md`（`
 
 ## 作者有话说` 与 `
 

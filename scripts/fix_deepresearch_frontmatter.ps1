@@ -2,7 +2,7 @@
 $path = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\общий-глубокое-исследование\SKILL.md"
 $refDir = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\общий-глубокое-исследование\references"
 
-[System.IO.File]::WriteAllText("$refDir\元数据归档.md", @"
+[System.IO.File]::WriteAllText("$refDir\архивирование-метаданных.md", @"
 # 元数据归档
 
 以下元数据从 `общий-глубокое-исследование` SKILL.md 的 frontmatter 中移出，以符合 skill-structure-template.instructions.md 规范。
@@ -36,7 +36,7 @@ argument-hint: "研究什么课题？例如：'起点中文网都市悬疑题材
 user-invocable: true
 ---
 
-> 原始框架基于 [Deep-Research-skills](https://github.com/Weizhena/Deep-Research-skills)，改造为小说写作专用版本。原始元数据（version/display_name/allowed-tools 等）已归档至 references/元数据归档.md。
+> 原始框架基于 [Deep-Research-skills](https://github.com/Weizhena/Deep-Research-skills)，改造为小说写作专用版本。原始元数据（version/display_name/allowed-tools 等）已归档至 references/архивирование-метаданных.md。
 
 "@
 

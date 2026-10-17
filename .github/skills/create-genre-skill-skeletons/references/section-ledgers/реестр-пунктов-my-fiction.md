@@ -2,8 +2,8 @@
 
 ## Применимые исходные Prompt
 
-- `городская-магия-и-сверхспособности/.github/prompts/输出My Fiction版.prompt.md`
-- `городской-саспенс/.github/prompts/输出My Fiction版.prompt.md`
+- `городская-магия-и-сверхспособности/.github/prompts/вывод-my-fiction.prompt.md`
+- `городской-саспенс/.github/prompts/вывод-my-fiction.prompt.md`
 
 ## Реестр
 

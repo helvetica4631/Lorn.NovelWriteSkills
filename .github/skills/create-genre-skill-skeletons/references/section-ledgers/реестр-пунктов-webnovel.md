@@ -2,8 +2,8 @@
 
 ## Применимые исходные Prompt
 
-- `городская-магия-и-сверхспособности/.github/prompts/输出WebNovel版.prompt.md`
-- `городской-саспенс/.github/prompts/输出WebNovel版.prompt.md`
+- `городская-магия-и-сверхспособности/.github/prompts/вывод-webnovel.prompt.md`
+- `городской-саспенс/.github/prompts/вывод-webnovel.prompt.md`
 
 ## Реестр
 

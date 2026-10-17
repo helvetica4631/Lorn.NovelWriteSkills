@@ -2,8 +2,8 @@
 
 ## Применимые исходные Prompt
 
-- `городская-магия-и-сверхспособности/.github/prompts/输出微信订阅号版.prompt.md`
-- `городской-саспенс/.github/prompts/输出微信订阅号版.prompt.md`
+- `городская-магия-и-сверхспособности/.github/prompts/вывод-wechat.prompt.md`
+- `городской-саспенс/.github/prompts/вывод-wechat.prompt.md`
 
 ## Реестр
 

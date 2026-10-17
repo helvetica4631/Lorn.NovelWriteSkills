@@ -261,7 +261,7 @@ POV基线来源: 源稿
 
 **Основная платформа вывода** (обязательное поле, `主输出平台`):
 
-- Указывается название целевой платформы, совпадающее с суффиксом названия Skill `общий-вывод-*`. Например: `起点中文网` (Qidian), `番茄小说` (Fanqie), `七猫小说` (Qimao), `晋江文学城` (Jinjiang), `知乎盐选` (Zhihu Yanxuan), `豆瓣阅读` (Douban Read), `纵横中文网` (Zongheng), `出版社` (издательство), `微信订阅号` (WeChat Official Accounts), `小红书` (Xiaohongshu), `新浪微博` (Sina Weibo), `百度百家号` (Baidu Baijiahao), `B站` (Bilibili), `WebNovel`, `My Fiction`, `GoodNovel`.
+- Указывается название целевой платформы, сопоставляемое с Skill `общий-вывод-*` по таблице из `.github/instructions/platform-output-skill-architecture.instructions.md`. Например: `起点中文网` (Qidian), `番茄小说` (Fanqie), `七猫小说` (Qimao), `晋江文学城` (Jinjiang), `知乎盐选` (Zhihu Yanxuan), `豆瓣阅读` (Douban Read), `纵横中文网` (Zongheng), `出版社` (издательство), `微信订阅号` (WeChat Official Accounts), `小红书` (Xiaohongshu), `新浪微博` (Sina Weibo), `百度百家号` (Baidu Baijiahao), `B站` (Bilibili), `WebNovel`, `My Fiction`, `GoodNovel`.
 - Эта настройка автоматически находится такими Skill, как `общий-создание-основного-текста`: Skill по соглашению об именовании загружает соответствующий Skill `общий-вывод-{платформа}` и объединяет платформенные правила при исполнении.
 - Если `Agents.md` не существует или основная платформа вывода не зарегистрирована, все нижестоящие Skill откатываются к платформонезависимому универсальному режиму по умолчанию, без ошибок и блокировок.
 

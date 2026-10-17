@@ -161,13 +161,13 @@ user-invocable: false
 
 ```markdown
 ---
-name: 分发-{平台名}
+name: распространение-{платформа}
 description: "..."
 argument-hint: "..."
 user-invocable: true
 ---
 
-# 分发-{平台名}
+# распространение-{платформа}
 
 <!-- Layer 1 -->
 ## 工作目录路由规则              (Правила маршрутизации рабочего каталога)

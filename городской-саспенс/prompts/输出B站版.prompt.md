@@ -24,9 +24,9 @@ agent: автор-романов
 
 ### 1.2 题材专属入口
 
-- `.github/skills/都市悬疑-输出B站版/SKILL.md`
-- `.github/skills/都市悬疑-输出B站版/references/题材边界与来源.md`
-- `.github/skills/都市悬疑-输出B站版/references/执行细则与题材补丁.md`
+- `.github/skills/городской-саспенс-вывод-bilibili/SKILL.md`
+- `.github/skills/городской-саспенс-вывод-bilibili/references/границы-жанра-и-источник.md`
+- `.github/skills/городской-саспенс-вывод-bilibili/references/детали-исполнения-и-жанровый-патч.md`
 
 ## 2. 执行顺序（硬性）
 

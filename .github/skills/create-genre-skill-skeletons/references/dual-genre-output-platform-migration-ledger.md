@@ -44,14 +44,14 @@
 | `городская-магия-и-сверхспособности/.github/prompts/输出小红书版.prompt.md` | `общий-вывод-xiaohongshu` | `городская-магия-и-сверхспособности-вывод-xiaohongshu` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
 | `городская-магия-и-сверхспособности/.github/prompts/输出B站版.prompt.md` | `общий-вывод-bilibili` | `городская-магия-и-сверхспособности-вывод-bilibili` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
 | `городская-магия-и-сверхспособности/.github/prompts/输出新浪微博版.prompt.md` | `общий-вывод-weibo` | `городская-магия-и-сверхспособности-вывод-weibo` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
-| `городской-саспенс/.github/prompts/输出番茄版.prompt.md` | `общий-вывод-fanqie` | `都市悬疑-输出番茄版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `городской-саспенс/.github/prompts/输出知乎版.prompt.md` | `общий-вывод-zhihu` | `都市悬疑-输出知乎版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `городской-саспенс/.github/prompts/输出豆瓣版.prompt.md` | `общий-вывод-douban` | `都市悬疑-输出豆瓣版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `городской-саспенс/.github/prompts/输出微信订阅号版.prompt.md` | `общий-вывод-wechat` | `都市悬疑-输出微信订阅号版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `городской-саспенс/.github/prompts/输出出版社版.prompt.md` | `общий-вывод-издательство` | `都市悬疑-输出出版社版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `городской-саспенс/.github/prompts/输出WebNovel版.prompt.md` | `общий-вывод-webnovel` | `都市悬疑-输出WebNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `городской-саспенс/.github/prompts/输出My Fiction版.prompt.md` | `общий-вывод-my-fiction` | `都市悬疑-输出My Fiction版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `городской-саспенс/.github/prompts/输出GoodNovel版.prompt.md` | `общий-вывод-goodnovel` | `都市悬疑-输出GoodNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `городской-саспенс/.github/prompts/输出番茄版.prompt.md` | `общий-вывод-fanqie` | `городской-саспенс-вывод-fanqie` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `городской-саспенс/.github/prompts/输出知乎版.prompt.md` | `общий-вывод-zhihu` | `городской-саспенс-вывод-zhihu` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `городской-саспенс/.github/prompts/输出豆瓣版.prompt.md` | `общий-вывод-douban` | `городской-саспенс-вывод-douban` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `городской-саспенс/.github/prompts/输出微信订阅号版.prompt.md` | `общий-вывод-wechat` | `городской-саспенс-вывод-wechat` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `городской-саспенс/.github/prompts/输出出版社版.prompt.md` | `общий-вывод-издательство` | `городской-саспенс-вывод-издательство` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `городской-саспенс/.github/prompts/输出WebNovel版.prompt.md` | `общий-вывод-webnovel` | `городской-саспенс-вывод-webnovel` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `городской-саспенс/.github/prompts/输出My Fiction版.prompt.md` | `общий-вывод-my-fiction` | `городской-саспенс-вывод-my-fiction` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `городской-саспенс/.github/prompts/输出GoodNovel版.prompt.md` | `общий-вывод-goodnovel` | `городской-саспенс-вывод-goodnovel` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
 
 ## 当前已完成事项
 

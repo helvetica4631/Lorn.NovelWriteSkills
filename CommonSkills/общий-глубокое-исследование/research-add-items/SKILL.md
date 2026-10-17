@@ -1,5 +1,5 @@
 ---
-name: общий-глубокое-исследование-追加课题
+name: общий-глубокое-исследование-добавление-тем
 description: Добавляет в существующий план исследования items (объекты исследования).
 allowed-tools: Bash, Read, Write, Glob, WebSearch, Task, AskUserQuestion
 user-invocable: false
@@ -8,7 +8,7 @@ user-invocable: false
 <!-- ===== Layer 1: постоянный кэш ===== -->
 
 
-# общий-глубокое-исследование-追加课题
+# общий-глубокое-исследование-добавление-тем
 
 ## Способ запуска
 `/research-add-items`

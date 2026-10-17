@@ -31,7 +31,7 @@ agent: автор-романов
 
 ## 已迁入 Skill 的通用内容
 
-以下内容已迁入 `AI科幻-去AI味重写` 与其 references，作为主承载层：
+以下内容已迁入 `AI科幻-устранение-духа-ии` 与其 references，作为主承载层：
 
 - 顶层裁判顺序与读者文本红线
 - 长篇连载保全口径
@@ -42,13 +42,13 @@ agent: автор-романов
 
 ## Skill references（执行时必须加载）
 
-- `../skills/AI科幻-去AI味重写/references/去AI味执行清单.md`
-- `../skills/AI科幻-去AI味重写/references/数值双轨与视角保护.md`
-- `../skills/AI科幻-去AI味重写/references/AI味识别雷达.md`
-- `../skills/AI科幻-去AI味重写/references/三级改造与工具包.md`
-- `../skills/AI科幻-去AI味重写/references/AI味识别与改写工具包.md`
-- `../skills/AI科幻-去AI味重写/references/通用风格与排版补充.md`
-- `../skills/AI科幻-去AI味重写/references/实战自检与陷阱.md`
+- `../skills/AI科幻-устранение-духа-ии/references/去AI味执行清单.md`
+- `../skills/AI科幻-устранение-духа-ии/references/数值双轨与视角保护.md`
+- `../skills/AI科幻-устранение-духа-ии/references/AI味识别雷达.md`
+- `../skills/AI科幻-устранение-духа-ии/references/三级改造与工具包.md`
+- `../skills/AI科幻-устранение-духа-ии/references/AI味识别与改写工具包.md`
+- `../skills/AI科幻-устранение-духа-ии/references/通用风格与排版补充.md`
+- `../skills/AI科幻-устранение-духа-ии/references/实战自检与陷阱.md`
 
 其中：
 

@@ -24,9 +24,9 @@ agent: автор-романов
 
 ### 1.2 题材专属入口
 
-- `.github/skills/AI科幻-输出WebNovel版/SKILL.md`
-- `.github/skills/AI科幻-输出WebNovel版/references/题材边界与来源.md`
-- `.github/skills/AI科幻-输出WebNovel版/references/执行细则与题材补丁.md`
+- `.github/skills/AI科幻-вывод-webnovel/SKILL.md`
+- `.github/skills/AI科幻-вывод-webnovel/references/题材边界与来源.md`
+- `.github/skills/AI科幻-вывод-webnovel/references/执行细则与题材补丁.md`
 
 ## 2. 执行顺序（硬性）
 

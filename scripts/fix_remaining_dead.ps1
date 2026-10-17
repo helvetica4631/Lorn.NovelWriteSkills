@@ -2,11 +2,11 @@
 $repo = "D:\第二职业\进行中\网文写作\提示词工程"
 
 $fixes = @(
-    @{sm="CommonSkills\通用-正文润色\SKILL.md"; ref="七猫专栏阅读性价比与手机端适配增补.md"; desc="七猫专栏阅读性价比与手机端适配增补"}
-    @{sm="CommonSkills\通用-正文润色\SKILL.md"; ref="技术描写可视化规则.md"; desc="技术描写可视化规则"}
-    @{sm="CommonSkills\通用-创建小说正文\SKILL.md"; ref="拼章检查卡_开头中段章末与钩子链复核.md"; desc="拼章检查卡"}
-    @{sm="CommonSkills\通用-创建小说正文\SKILL.md"; ref="三阶段骨架扩写拼合_体裁与扩字补编.md"; desc="三阶段骨架扩写拼合"}
-    @{sm="CommonSkills\通用-设计线索伏笔与回收台账\SKILL.md"; ref="道具呼应弧线与出场追踪.md"; desc="道具呼应弧线与出场追踪"}
+    @{sm="CommonSkills\общий-шлифовка-основного-текста\SKILL.md"; ref="七猫专栏阅读性价比与手机端适配增补.md"; desc="七猫专栏阅读性价比与手机端适配增补"}
+    @{sm="CommonSkills\общий-шлифовка-основного-текста\SKILL.md"; ref="技术描写可视化规则.md"; desc="技术描写可视化规则"}
+    @{sm="CommonSkills\общий-создание-основного-текста\SKILL.md"; ref="拼章检查卡_开头中段章末与钩子链复核.md"; desc="拼章检查卡"}
+    @{sm="CommonSkills\общий-создание-основного-текста\SKILL.md"; ref="三阶段骨架扩写拼合_体裁与扩字补编.md"; desc="三阶段骨架扩写拼合"}
+    @{sm="CommonSkills\общий-проектирование-реестра-улик-и-завязок\SKILL.md"; ref="道具呼应弧线与出场追踪.md"; desc="道具呼应弧线与出场追踪"}
 )
 
 foreach ($f in $fixes) {

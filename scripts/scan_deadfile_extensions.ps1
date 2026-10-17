@@ -147,16 +147,16 @@ foreach ($sf in $allSkillFiles) {
     }
   }
 
-  # 3b. ../通用- 从题材 Wrapper 走错路径（genre/skills/xxx/SKILL.md 中引用 ../通用-）
+  # 3b. ../общий- 从题材 Wrapper 走错路径（genre/skills/xxx/SKILL.md 中引用 ../общий-）
   if ($relPath -match 'skills\\[^-]+-') {
-    $wrongPathMatches = [regex]::Matches($content, '\.\./通用-')
+    $wrongPathMatches = [regex]::Matches($content, '\.\./общий-')
     foreach ($m in $wrongPathMatches) {
       # 确认确实在题材 wrapper 中
       $BrokenResults += [PSCustomObject]@{
         ScanCategory = "broken_ref"
         FilePath     = $relPath
         IssueType    = "wrong_common_ref_path"
-        Detail       = "第 $($m.LineNumber) 行附近: '../通用-' 应由 '../../CommonSkills/通用-' 替代"
+        Detail       = "第 $($m.LineNumber) 行附近: '../общий-' 应由 '../../CommonSkills/общий-' 替代"
         Status       = "broken"
       }
     }

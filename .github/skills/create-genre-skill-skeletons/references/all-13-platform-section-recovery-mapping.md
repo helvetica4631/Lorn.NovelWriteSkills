@@ -50,7 +50,7 @@
 
 ### 3.1 平台共性应迁往哪里
 
-以下内容默认属于**平台共性**，应优先回填到 `通用-输出*` 对应 Skill 目录下：
+以下内容默认属于**平台共性**，应优先回填到 `общий-вывод-*` 对应 Skill 目录下：
 
 - 任务定义与平台适配目标
 - 对 `创建小说正文 / 正文润色 / 去AI味` 的基准继承关系
@@ -77,23 +77,23 @@
 
 | 平台 | 通用回填主落点 | 异能志怪题材回填主落点 | 都市悬疑题材回填主落点 |
 | --- | --- | --- | --- |
-| 番茄 | `通用-输出番茄版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出番茄版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出番茄版/references/分节级补救映射与详细规则回填.md` |
-| 知乎 | `通用-输出知乎版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出知乎版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出知乎版/references/分节级补救映射与详细规则回填.md` |
-| 豆瓣 | `通用-输出豆瓣版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出豆瓣版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出豆瓣版/references/分节级补救映射与详细规则回填.md` |
-| 微信订阅号 | `通用-输出微信订阅号版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出微信订阅号版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出微信订阅号版/references/分节级补救映射与详细规则回填.md` |
-| 出版社 | `通用-输出出版社版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出出版社版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出出版社版/references/分节级补救映射与详细规则回填.md` |
-| WebNovel | `通用-输出WebNovel版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出WebNovel版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出WebNovel版/references/分节级补救映射与详细规则回填.md` |
-| My Fiction | `通用-输出My Fiction版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出My Fiction版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出My Fiction版/references/分节级补救映射与详细规则回填.md` |
-| GoodNovel | `通用-输出GoodNovel版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出GoodNovel版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出GoodNovel版/references/分节级补救映射与详细规则回填.md` |
-| 七猫 | `通用-输出七猫版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出七猫版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
-| 百度百家号 | `通用-输出百度百家号版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出百度百家号版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
-| 小红书 | `通用-输出小红书版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出小红书版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
-| B站 | `通用-输出B站版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出B站版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
-| 新浪微博 | `通用-输出新浪微博版/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出新浪微博版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
+| 番茄 | `общий-вывод-fanqie/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出番茄版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出番茄版/references/分节级补救映射与详细规则回填.md` |
+| 知乎 | `общий-вывод-zhihu/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出知乎版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出知乎版/references/分节级补救映射与详细规则回填.md` |
+| 豆瓣 | `общий-вывод-douban/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出豆瓣版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出豆瓣版/references/分节级补救映射与详细规则回填.md` |
+| 微信订阅号 | `общий-вывод-wechat/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出微信订阅号版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出微信订阅号版/references/分节级补救映射与详细规则回填.md` |
+| 出版社 | `общий-вывод-издательство/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出出版社版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出出版社版/references/分节级补救映射与详细规则回填.md` |
+| WebNovel | `общий-вывод-webnovel/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出WebNovel版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出WebNovel版/references/分节级补救映射与详细规则回填.md` |
+| My Fiction | `общий-вывод-my-fiction/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出My Fiction版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出My Fiction版/references/分节级补救映射与详细规则回填.md` |
+| GoodNovel | `общий-вывод-goodnovel/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出GoodNovel版/references/分节级补救映射与详细规则回填.md` | `都市悬疑-输出GoodNovel版/references/分节级补救映射与详细规则回填.md` |
+| 七猫 | `общий-вывод-qimao/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出七猫版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
+| 百度百家号 | `общий-вывод-baijiahao/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出百度百家号版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
+| 小红书 | `общий-вывод-xiaohongshu/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出小红书版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
+| B站 | `общий-вывод-bilibili/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出B站版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
+| 新浪微博 | `общий-вывод-weibo/references/分节级补救映射与详细规则回填.md` | `异能志怪-输出新浪微博版/references/分节级补救映射与详细规则回填.md` | 当前题材目录暂无对应 Skill |
 
 ## 五、平台共性回填最低标准
 
-每个 `通用-输出*` 的详细回填文件至少要覆盖：
+每个 `общий-вывод-*` 的详细回填文件至少要覆盖：
 
 1. 来源与恢复等级
 2. `0.*` 平台任务定义与基准继承

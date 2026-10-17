@@ -140,7 +140,7 @@ function Get-SkillCategory {
   if ($DirPath -match 'CommonSkills') { return "CommonSkill" }
   if ($DirPath -match '小说分发') { return "Distribution" }
   if ($DirPath -match '仅用于参考') { return "External" }
-  if ($DirPath -match '通用-深度研究\\[^\\]+$') { return "DeepResearch" }
+  if ($DirPath -match 'общий-глубокое-исследование\\[^\\]+$') { return "DeepResearch" }
   if ($DirPath -match 'vibe-writing') { return "External" }
   if ($DirPath -match '\.github\\skills' -or $DirPath -match '\\skills\\') { return "GenreWrapper" }
   return "Other"
@@ -223,7 +223,7 @@ Get-ChildItem $Path -Recurse -Filter "SKILL.md" -File | ForEach-Object {
 
   # 是否题材包装层
   $isGenreWrapper = ($category -eq "GenreWrapper")
-  $hasGenreRouteDecl = $body -match "通用-[0-9a-zA-Z_\-\p{Han}]+"
+  $hasGenreRouteDecl = $body -match "общий-[0-9a-zA-Z_\-\p{Han}]+"
 
   $obj = [PSCustomObject]@{
     FilePath       = $file.FullName.Replace($Path, "").TrimStart('\')

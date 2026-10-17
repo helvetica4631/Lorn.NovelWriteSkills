@@ -1,6 +1,6 @@
 ---
 name: 输出WebNovel版
-description: "把异能志怪章节改写为更适合 WebNovel 的英文版本。作为统一入口，默认路由到 `通用-输出WebNovel版`，并保留最小平台门禁与输出根目录说明。"
+description: "把异能志怪章节改写为更适合 WebNovel 的英文版本。作为统一入口，默认路由到 `общий-вывод-webnovel`，并保留最小平台门禁与输出根目录说明。"
 argument-hint: "把某一章改成 WebNovel 英文版；可提供原章路径，默认输出到 WebNovel 目录。"
 agent: agent
 ---
@@ -9,7 +9,7 @@ agent: agent
 
 ## 题材技能路由（强制）
 
-命中本 Prompt 时，必须先调用：`通用-输出WebNovel版`。
+命中本 Prompt 时，必须先调用：`общий-вывод-webnovel`。
 
 ## 本 Prompt 只保留的职责
 

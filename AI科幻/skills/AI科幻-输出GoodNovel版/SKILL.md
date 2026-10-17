@@ -1,6 +1,6 @@
 ---
 name: AI科幻-输出GoodNovel版
-description: '用于【AI科幻】题材下的 GoodNovel 平台输出任务。作为题材包装层、兼容入口与路由层，负责保留AI科幻入口、补充关系张力与现实调查边界，并明确要求优先强制加载并使用 `通用-输出GoodNovel版`。关键词：AI科幻GoodNovel版、英文平台、关系张力、调查悬疑。'
+description: '用于【AI科幻】题材下的 GoodNovel 平台输出任务。作为题材包装层、兼容入口与路由层，负责保留AI科幻入口、补充关系张力与现实调查边界，并明确要求优先强制加载并使用 `общий-вывод-goodnovel`。关键词：AI科幻GoodNovel版、英文平台、关系张力、调查悬疑。'
 argument-hint: '要把哪一章AI科幻改成 GoodNovel 版？默认按“保调查压力、人物拉扯与英文情绪张力”处理。'
 
 user-invocable: false
@@ -18,12 +18,12 @@ user-invocable: false
 
 ## 对应通用 Skill
 
-- `通用-输出GoodNovel版`
+- `общий-вывод-goodnovel`
 
 ## 本层职责
 
 - 保留“AI科幻-输出GoodNovel版”这一题材入口名。
-- 将 GoodNovel 平台的共性骨架路由到 `通用-输出GoodNovel版`。
+- 将 GoodNovel 平台的共性骨架路由到 `общий-вывод-goodnovel`。
 - 补充AI科幻题材在 GoodNovel 平台下的关系张力、现实调查与情绪压力边界。
 
 ## 继续读取的题材 references
@@ -47,15 +47,15 @@ user-invocable: false
 
 ## 推荐执行顺序
 
-1. 先读取 `通用-输出GoodNovel版`。
+1. 先读取 `общий-вывод-goodnovel`。
 2. 再读取当前 Skill 的两份 references。
 3. 先保技术事件链，再做英文关系张力与追更拉力强化。
 
 ## 强制要求
 
-- 命中本技能时，必须优先强制加载当前题材 Skill 与 `通用-输出GoodNovel版`。
-- 执行时必须完整继承 `通用-输出GoodNovel版` 的“生成阶段字数保底目标”，在改写阶段先达保底再落盘；不得把字数问题留到系统准入控制补救。
-- 不得绕过 `通用-输出GoodNovel版` 在本文件里恢复一整套平行共性规则。
+- 命中本技能时，必须优先强制加载当前题材 Skill 与 `общий-вывод-goodnovel`。
+- 执行时必须完整继承 `общий-вывод-goodnovel` 的“生成阶段字数保底目标”，在改写阶段先达保底再落盘；不得把字数问题留到系统准入控制补救。
+- 不得绕过 `общий-вывод-goodnovel` 在本文件里恢复一整套平行共性规则。
 - 若当前源 Prompt 仍在无损迁移中，详细规则必须继续通过映射台账或源 Prompt 可追溯。
 
 ## 题材补充边界

@@ -1,5 +1,5 @@
-# Fix 通用-输出今日头条版 SKILL.md
-$path = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\通用-输出今日头条版\SKILL.md"
+# Fix общий-вывод-toutiao SKILL.md
+$path = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\общий-вывод-toutiao\SKILL.md"
 $c = [System.IO.File]::ReadAllText($path)
 
 # 1. Remove inline platform research section (### 1-5 subsections)

@@ -25,7 +25,7 @@
 
 ## 与 Skill 关联的审计脚本
 
-- `voice_audit_novel.py`：作者"像不像"四指标审计（`通用-作者风格进化` 消费，由 `通用-审阅章节正文` 在已注册作者风格进化数据源的项目上运行）。用法：`python scripts/voice_audit_novel.py --text {正文.md} --samples {作者原声样本库.md} --card {作者风格画像.md} [--chapters N]`。输出 JSON 证据报告；Anti-Cheat：所有达标结论必须引用本脚本输出，禁止手写。
+- `voice_audit_novel.py`：作者"像不像"四指标审计（`общий-эволюция-авторского-стиля` 消费，由 `общий-рецензия-текста-главы` 在已注册作者风格进化数据源的项目上运行）。用法：`python scripts/voice_audit_novel.py --text {正文.md} --samples {作者原声样本库.md} --card {作者风格画像.md} [--chapters N]`。输出 JSON 证据报告；Anti-Cheat：所有达标结论必须引用本脚本输出，禁止手写。
 
 ## 维护约定
 

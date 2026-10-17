@@ -1,7 +1,7 @@
-# 通用-平台签约评估框架 内容外化脚本
+# общий-оценка-подписания-на-платформе 内容外化脚本
 # 将 SKILL.md 中可外化的数据表格和方法论节拆到 references/
 
-$SkillDir = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\通用-平台签约评估框架"
+$SkillDir = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\общий-оценка-подписания-на-платформе"
 $SkillMd = Join-Path $SkillDir "SKILL.md"
 $RefDir = Join-Path $SkillDir "references"
 
@@ -14,7 +14,7 @@ $end1 = $c.IndexOf("`r`n## 大纲收入公式评估诊断", $start1 + 5)
 if ($start1 -ge 0 -and $end1 -gt $start1) {
   $section1 = $c.Substring($start1, $end1 - $start1)
   # 写入 references 文件
-  $ref1 = "# 套路赛道饱和度评估`r`n`r`n> 本文件是 `通用-平台签约评估框架` 的支撑数据，由 SKILL.md 中外化所得。`r`n$section1"
+  $ref1 = "# 套路赛道饱和度评估`r`n`r`n> 本文件是 `общий-оценка-подписания-на-платформе` 的支撑数据，由 SKILL.md 中外化所得。`r`n$section1"
   [System.IO.File]::WriteAllText("$RefDir\套路赛道饱和度评估.md", $ref1)
   # 替换 SKILL.md 中的内容为引用
   $short1 = "`r`n## 套路赛道饱和度评估`r`n`r`n> 详见 references/套路赛道饱和度评估.md。包含套路饱和度评判标准（高/中/低饱和/组合创新四级）、执行方式与平台错位/短剧改编专项检查。`r`n"
@@ -27,7 +27,7 @@ $start2 = $c.IndexOf("`r`n## 大纲收入公式评估诊断（新增）")
 $end2 = $c.IndexOf("`r`n## 蒸馏产物对标签约评估", $start2 + 5)
 if ($start2 -ge 0 -and $end2 -gt $start2) {
   $section2 = $c.Substring($start2, $end2 - $start2)
-  $ref2 = "# 大纲收入公式评估诊断`r`n`r`n> 本文件是 `通用-平台签约评估框架` 的支撑数据，由 SKILL.md 中外化所得。`r`n$section2"
+  $ref2 = "# 大纲收入公式评估诊断`r`n`r`n> 本文件是 `общий-оценка-подписания-на-платформе` 的支撑数据，由 SKILL.md 中外化所得。`r`n$section2"
   [System.IO.File]::WriteAllText("$RefDir\大纲收入公式评估诊断.md", $ref2)
   $short2 = "`r`n## 大纲收入公式评估诊断`r`n`r`n> 详见 references/大纲收入公式评估诊断.md。包含稿费潜力四因子公式（开篇质量×付费点密度×人设经济价值×数据增长设计）及使用规则。`r`n"
   $c = $c.Replace($section2, $short2)
@@ -39,7 +39,7 @@ $start3 = $c.IndexOf("`r`n## 【起点口径】起点数据指标与爆款分层
 $end3 = $c.IndexOf("`r`n## 研究回灌补强", $start3 + 5) 
 if ($start3 -ge 0 -and $end3 -gt $start3) {
   $section3 = $c.Substring($start3, $end3 - $start3)
-  $ref3 = "# 起点数据指标与爆款分层标准`r`n`r`n> 本文件是 `通用-平台签约评估框架` 的支撑数据，由 SKILL.md 中外化所得。`r`n$section3"
+  $ref3 = "# 起点数据指标与爆款分层标准`r`n`r`n> 本文件是 `общий-оценка-подписания-на-платформе` 的支撑数据，由 SKILL.md 中外化所得。`r`n$section3"
   [System.IO.File]::WriteAllText("$RefDir\起点数据指标与爆款分层标准.md", $ref3)
   $short3 = "`r`n## 【起点口径】起点数据指标与爆款分层标准`r`n`r`n> 详见 references/起点数据指标与爆款分层标准.md。包含核心数据指标定义、爆款分层门槛（精品/大神/白金/现象级）、分阶段评判标准映射及2025-2026趋势影响。`r`n"
   $c = $c.Replace($section3, $short3)
@@ -51,7 +51,7 @@ $start4 = $c.IndexOf("`r`n## 研究回灌补强（2026）")
 $end4 = $c.IndexOf("`r`n## 投稿材料模板符合性预检", $start4 + 5)
 if ($start4 -ge 0 -and $end4 -gt $start4) {
   $section4 = $c.Substring($start4, $end4 - $start4)
-  $ref4 = "# 研究回灌补强`r`n`r`n> 本文件是 `通用-平台签约评估框架` 的支撑数据，由 SKILL.md 中外化所得。`r`n$section4"
+  $ref4 = "# 研究回灌补强`r`n`r`n> 本文件是 `общий-оценка-подписания-на-платформе` 的支撑数据，由 SKILL.md 中外化所得。`r`n$section4"
   [System.IO.File]::WriteAllText("$RefDir\研究回灌补强.md", $ref4)
   $short4 = "`r`n## 研究回灌补强（2026）`r`n`r`n> 详见 references/研究回灌补强.md。包含情感向项目快审硬核验、高概念降置信度规则、价值观适配检查及情绪赛道双线评估要求。`r`n"
   $c = $c.Replace($section4, $short4)
@@ -63,7 +63,7 @@ $start5 = $c.IndexOf("`r`n## 蒸馏产物对标签约评估（新增）")
 $end5 = $c.IndexOf("`r`n## 【起点口径】起点术语口径", $start5 + 5)
 if ($start5 -ge 0 -and $end5 -gt $start5) {
   $section5 = $c.Substring($start5, $end5 - $start5)
-  $ref5 = "# 蒸馏产物对标签约评估`r`n`r`n> 本文件是 通用-平台签约评估框架 的支撑数据，由 SKILL.md 中外化所得。`r`n$section5"
+  $ref5 = "# 蒸馏产物对标签约评估`r`n`r`n> 本文件是 общий-оценка-подписания-на-платформе 的支撑数据，由 SKILL.md 中外化所得。`r`n$section5"
   [System.IO.File]::WriteAllText("$RefDir\蒸馏产物对标签约评估.md", $ref5)
   $short5 = "`r`n## 蒸馏产物对标签约评估`r`n`r`n> 详见 references/蒸馏产物对标签约评估.md。包含蒸馏竞对双重对标法（五层对标体系）、蒸馏蓝本对标（14维度结构层映射）、蒸馏文风对标（8维度文笔层映射）、蒸馏研究对标（5维度平台约束映射）及蒸馏竞对双重对标矩阵呈现格式。`r`n"
   $c = $c.Replace($section5, $short5)

@@ -4,7 +4,7 @@
 
 ## 说明
 
-- `共享平台`：两个题材当前都已存在对应 Prompt，平台共性必须上收至同一个 `通用-输出*` Skill。
+- `共享平台`：两个题材当前都已存在对应 Prompt，平台共性必须上收至同一个 `общий-вывод-*` Skill。
 - `题材独有平台`：当前仅某一题材已存在对应 Prompt，通用 Skill 可先服务现有题材，后续其他题材复用。
 - `源 Prompt 状态` 仅记录当前迁移进度，不代表可以删除原文件。
 - 只有当“详细规则已完成无损映射 + 薄 Prompt / SOP 已接线”后，源 Prompt 才允许瘦身。
@@ -13,51 +13,51 @@
 
 | 平台 | 通用 Skill | 异能志怪 | 都市悬疑 | 平台类型 |
 | --- | --- | --- | --- | --- |
-| 番茄 | `通用-输出番茄版` | 有 | 有 | 共享平台 |
-| 知乎 | `通用-输出知乎版` | 有 | 有 | 共享平台 |
-| 豆瓣 | `通用-输出豆瓣版` | 有 | 有 | 共享平台 |
-| 微信订阅号 | `通用-输出微信订阅号版` | 有 | 有 | 共享平台 |
-| 出版社 | `通用-输出出版社版` | 有 | 有 | 共享平台 |
-| WebNovel | `通用-输出WebNovel版` | 有 | 有 | 共享平台 |
-| My Fiction | `通用-输出My Fiction版` | 有 | 有 | 共享平台 |
-| GoodNovel | `通用-输出GoodNovel版` | 有 | 有 | 共享平台 |
-| 七猫 | `通用-输出七猫版` | 有 | 无 | 题材独有平台 |
-| 百度百家号 | `通用-输出百度百家号版` | 有 | 无 | 题材独有平台 |
-| 小红书 | `通用-输出小红书版` | 有 | 无 | 题材独有平台 |
-| B站 | `通用-输出B站版` | 有 | 无 | 题材独有平台 |
-| 新浪微博 | `通用-输出新浪微博版` | 有 | 无 | 题材独有平台 |
+| 番茄 | `общий-вывод-fanqie` | 有 | 有 | 共享平台 |
+| 知乎 | `общий-вывод-zhihu` | 有 | 有 | 共享平台 |
+| 豆瓣 | `общий-вывод-douban` | 有 | 有 | 共享平台 |
+| 微信订阅号 | `общий-вывод-wechat` | 有 | 有 | 共享平台 |
+| 出版社 | `общий-вывод-издательство` | 有 | 有 | 共享平台 |
+| WebNovel | `общий-вывод-webnovel` | 有 | 有 | 共享平台 |
+| My Fiction | `общий-вывод-my-fiction` | 有 | 有 | 共享平台 |
+| GoodNovel | `общий-вывод-goodnovel` | 有 | 有 | 共享平台 |
+| 七猫 | `общий-вывод-qimao` | 有 | 无 | 题材独有平台 |
+| 百度百家号 | `общий-вывод-baijiahao` | 有 | 无 | 题材独有平台 |
+| 小红书 | `общий-вывод-xiaohongshu` | 有 | 无 | 题材独有平台 |
+| B站 | `общий-вывод-bilibili` | 有 | 无 | 题材独有平台 |
+| 新浪微博 | `общий-вывод-weibo` | 有 | 无 | 题材独有平台 |
 
 ## 当前迁移状态总表
 
 | 源 Prompt | 目标通用 Skill | 目标题材 Skill | 当前状态 | 下一步 |
 | --- | --- | --- | --- | --- |
-| `异能志怪/.github/prompts/输出番茄版.prompt.md` | `通用-输出番茄版` | `异能志怪-输出番茄版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `异能志怪/.github/prompts/输出知乎版.prompt.md` | `通用-输出知乎版` | `异能志怪-输出知乎版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `异能志怪/.github/prompts/输出豆瓣版.prompt.md` | `通用-输出豆瓣版` | `异能志怪-输出豆瓣版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `异能志怪/.github/prompts/输出微信订阅号版.prompt.md` | `通用-输出微信订阅号版` | `异能志怪-输出微信订阅号版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `异能志怪/.github/prompts/输出出版社版.prompt.md` | `通用-输出出版社版` | `异能志怪-输出出版社版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `异能志怪/.github/prompts/输出WebNovel版.prompt.md` | `通用-输出WebNovel版` | `异能志怪-输出WebNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `异能志怪/.github/prompts/输出My Fiction版.prompt.md` | `通用-输出My Fiction版` | `异能志怪-输出My Fiction版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `异能志怪/.github/prompts/输出GoodNovel版.prompt.md` | `通用-输出GoodNovel版` | `异能志怪-输出GoodNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `异能志怪/.github/prompts/输出七猫版.prompt.md` | `通用-输出七猫版` | `异能志怪-输出七猫版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
-| `异能志怪/.github/prompts/输出百度百家号版.prompt.md` | `通用-输出百度百家号版` | `异能志怪-输出百度百家号版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
-| `异能志怪/.github/prompts/输出小红书版.prompt.md` | `通用-输出小红书版` | `异能志怪-输出小红书版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
-| `异能志怪/.github/prompts/输出B站版.prompt.md` | `通用-输出B站版` | `异能志怪-输出B站版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
-| `异能志怪/.github/prompts/输出新浪微博版.prompt.md` | `通用-输出新浪微博版` | `异能志怪-输出新浪微博版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
-| `都市悬疑/.github/prompts/输出番茄版.prompt.md` | `通用-输出番茄版` | `都市悬疑-输出番茄版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `都市悬疑/.github/prompts/输出知乎版.prompt.md` | `通用-输出知乎版` | `都市悬疑-输出知乎版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `都市悬疑/.github/prompts/输出豆瓣版.prompt.md` | `通用-输出豆瓣版` | `都市悬疑-输出豆瓣版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `都市悬疑/.github/prompts/输出微信订阅号版.prompt.md` | `通用-输出微信订阅号版` | `都市悬疑-输出微信订阅号版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `都市悬疑/.github/prompts/输出出版社版.prompt.md` | `通用-输出出版社版` | `都市悬疑-输出出版社版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `都市悬疑/.github/prompts/输出WebNovel版.prompt.md` | `通用-输出WebNovel版` | `都市悬疑-输出WebNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `都市悬疑/.github/prompts/输出My Fiction版.prompt.md` | `通用-输出My Fiction版` | `都市悬疑-输出My Fiction版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
-| `都市悬疑/.github/prompts/输出GoodNovel版.prompt.md` | `通用-输出GoodNovel版` | `都市悬疑-输出GoodNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出番茄版.prompt.md` | `общий-вывод-fanqie` | `异能志怪-输出番茄版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出知乎版.prompt.md` | `общий-вывод-zhihu` | `异能志怪-输出知乎版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出豆瓣版.prompt.md` | `общий-вывод-douban` | `异能志怪-输出豆瓣版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出微信订阅号版.prompt.md` | `общий-вывод-wechat` | `异能志怪-输出微信订阅号版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出出版社版.prompt.md` | `общий-вывод-издательство` | `异能志怪-输出出版社版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出WebNovel版.prompt.md` | `общий-вывод-webnovel` | `异能志怪-输出WebNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出My Fiction版.prompt.md` | `общий-вывод-my-fiction` | `异能志怪-输出My Fiction版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出GoodNovel版.prompt.md` | `общий-вывод-goodnovel` | `异能志怪-输出GoodNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `异能志怪/.github/prompts/输出七猫版.prompt.md` | `общий-вывод-qimao` | `异能志怪-输出七猫版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
+| `异能志怪/.github/prompts/输出百度百家号版.prompt.md` | `общий-вывод-baijiahao` | `异能志怪-输出百度百家号版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
+| `异能志怪/.github/prompts/输出小红书版.prompt.md` | `общий-вывод-xiaohongshu` | `异能志怪-输出小红书版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
+| `异能志怪/.github/prompts/输出B站版.prompt.md` | `общий-вывод-bilibili` | `异能志怪-输出B站版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
+| `异能志怪/.github/prompts/输出新浪微博版.prompt.md` | `общий-вывод-weibo` | `异能志怪-输出新浪微博版` | 已建映射并补回填 refs | 当前仅异能志怪覆盖；都市悬疑待补建 |
+| `都市悬疑/.github/prompts/输出番茄版.prompt.md` | `общий-вывод-fanqie` | `都市悬疑-输出番茄版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `都市悬疑/.github/prompts/输出知乎版.prompt.md` | `общий-вывод-zhihu` | `都市悬疑-输出知乎版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `都市悬疑/.github/prompts/输出豆瓣版.prompt.md` | `общий-вывод-douban` | `都市悬疑-输出豆瓣版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `都市悬疑/.github/prompts/输出微信订阅号版.prompt.md` | `общий-вывод-wechat` | `都市悬疑-输出微信订阅号版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `都市悬疑/.github/prompts/输出出版社版.prompt.md` | `общий-вывод-издательство` | `都市悬疑-输出出版社版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `都市悬疑/.github/prompts/输出WebNovel版.prompt.md` | `общий-вывод-webnovel` | `都市悬疑-输出WebNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `都市悬疑/.github/prompts/输出My Fiction版.prompt.md` | `общий-вывод-my-fiction` | `都市悬疑-输出My Fiction版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
+| `都市悬疑/.github/prompts/输出GoodNovel版.prompt.md` | `общий-вывод-goodnovel` | `都市悬疑-输出GoodNovel版` | 已建映射并补回填 refs | 继续审计 frontmatter 触发词与 SOP 精确引用 |
 
 ## 当前已完成事项
 
 - 已更新标准题材 Skill 清单，纳入输出平台 Skill family。
 - 已建立无损迁移台账模板与审计清单。
-- 已建立 13 个 `通用-输出*` Skill 骨架。
+- 已建立 13 个 `общий-вывод-*` Skill 骨架。
 - 已建立 `异能志怪` 当前 13 个 `输出*` 对应的题材包装 Skill 骨架。
 - 已建立 `都市悬疑` 当前 8 个 `输出*` 对应的题材包装 Skill 骨架。
 - 已为 13 个平台建立条款级迁移台账，并将主落点回填到通用 / 题材详细 refs。

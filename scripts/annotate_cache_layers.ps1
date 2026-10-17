@@ -89,7 +89,7 @@ $AllFiles | ForEach-Object {
   if (-not $content) { return }
 
   # 跳过深度研究子 skill（仅处理主 skill 和通用 skill）
-  if ($file -match '通用-深度研究\\.+\\SKILL\.md$' -and $file -notmatch '通用-深度研究\\SKILL\.md$') { return }
+  if ($file -match 'общий-глубокое-исследование\\.+\\SKILL\.md$' -and $file -notmatch 'общий-глубокое-исследование\\SKILL\.md$') { return }
 
   # 跳过头像缓存注释的文件（匹配 ==== Layer N: ==== 模式）
   if ($content -match '<!--\s*={4,}\s*Layer\s+\d+\s*:') {

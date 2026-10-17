@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-voice_audit_novel.py — 作者"像不像"四指标审计（通用-作者风格进化）
+voice_audit_novel.py — 作者"像不像"四指标审计（общий-эволюция-авторского-стиля）
 
 用法:
   python scripts/voice_audit_novel.py --text {章节正文.md} \

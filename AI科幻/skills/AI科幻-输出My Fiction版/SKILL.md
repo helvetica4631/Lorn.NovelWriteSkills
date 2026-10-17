@@ -1,6 +1,6 @@
 ---
 name: AI科幻-输出My Fiction版
-description: '用于【AI科幻】题材下的 My Fiction 平台输出任务。作为题材包装层、兼容入口与路由层，负责保留AI科幻入口、补充关系黏性与调查驱动边界，并明确要求优先强制加载并使用 `通用-输出My Fiction版`。关键词：AI科幻My Fiction版、英文追更、关系张力。'
+description: '用于【AI科幻】题材下的 My Fiction 平台输出任务。作为题材包装层、兼容入口与路由层，负责保留AI科幻入口、补充关系黏性与调查驱动边界，并明确要求优先强制加载并使用 `общий-вывод-my-fiction`。关键词：AI科幻My Fiction版、英文追更、关系张力。'
 argument-hint: '要把哪一章AI科幻改成 My Fiction 版？默认按“保系统危机推进、关系拉力与英文追更感”处理。'
 
 user-invocable: false
@@ -18,12 +18,12 @@ user-invocable: false
 
 ## 对应通用 Skill
 
-- `通用-输出My Fiction版`
+- `общий-вывод-my-fiction`
 
 ## 本层职责
 
 - 保留“AI科幻-输出My Fiction版”这一题材入口名。
-- 将 My Fiction 平台的共性骨架路由到 `通用-输出My Fiction版`。
+- 将 My Fiction 平台的共性骨架路由到 `общий-вывод-my-fiction`。
 - 补充AI科幻题材在 My Fiction 平台下的关系黏性、调查驱动与选择压力边界。
 
 ## 继续读取的题材 references
@@ -47,15 +47,15 @@ user-invocable: false
 
 ## 推荐执行顺序
 
-1. 先读取 `通用-输出My Fiction版`。
+1. 先读取 `общий-вывод-my-fiction`。
 2. 再读取当前 Skill 的两份 references。
 3. 先保技术事件链，再做英文互动追更感与关系拉力强化。
 
 ## 强制要求
 
-- 命中本技能时，必须优先强制加载当前题材 Skill 与 `通用-输出My Fiction版`。
-- 执行时必须完整继承 `通用-输出My Fiction版` 的“生成阶段字数保底目标”，在改写阶段先达保底再落盘；不得把字数问题留到系统准入控制补救。
-- 不得绕过 `通用-输出My Fiction版` 在本文件里恢复一整套平行共性规则。
+- 命中本技能时，必须优先强制加载当前题材 Skill 与 `общий-вывод-my-fiction`。
+- 执行时必须完整继承 `общий-вывод-my-fiction` 的“生成阶段字数保底目标”，在改写阶段先达保底再落盘；不得把字数问题留到系统准入控制补救。
+- 不得绕过 `общий-вывод-my-fiction` 在本文件里恢复一整套平行共性规则。
 - 若当前源 Prompt 仍在无损迁移中，详细规则必须继续通过映射台账或源 Prompt 可追溯。
 
 ## 题材补充边界

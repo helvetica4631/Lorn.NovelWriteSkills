@@ -1,11 +1,11 @@
-# 通用-深度研究 frontmatter 标准化
-$path = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\通用-深度研究\SKILL.md"
-$refDir = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\通用-深度研究\references"
+# общий-глубокое-исследование frontmatter 标准化
+$path = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\общий-глубокое-исследование\SKILL.md"
+$refDir = "D:\第二职业\进行中\网文写作\提示词工程\CommonSkills\общий-глубокое-исследование\references"
 
 [System.IO.File]::WriteAllText("$refDir\元数据归档.md", @"
 # 元数据归档
 
-以下元数据从 `通用-深度研究` SKILL.md 的 frontmatter 中移出，以符合 skill-structure-template.instructions.md 规范。
+以下元数据从 `общий-глубокое-исследование` SKILL.md 的 frontmatter 中移出，以符合 skill-structure-template.instructions.md 规范。
 
 - **原始框架**: [Deep-Research-skills](https://github.com/Weizhena/Deep-Research-skills)
 - **原始 version**: 2.1.0
@@ -30,7 +30,7 @@ $body = $body.TrimStart("`r`n ")
 # New frontmatter
 $fm = @"
 ---
-name: 通用-深度研究
+name: общий-глубокое-исследование
 description: "专用于小说写作的结构化深度研究 Skill。支持对题材趋势、平台生态、专业知识、场景环境、人物原型、写作技法、读者市场等研究域，执行'大纲生成→并行深搜→报告输出'的全流程深度调研。关键词：深度研究、写作研究、题材调研、平台研究。"
 argument-hint: "研究什么课题？例如：'起点中文网都市悬疑题材2025-2026趋势'。可选指定研究域：题材趋势/平台生态/专业知识/场景环境/人物原型/写作技法/读者市场。"
 user-invocable: true
@@ -47,7 +47,7 @@ $s2 = $newContent.IndexOf("`r`n## 输出示例")
 $e2 = $newContent.IndexOf("`r`n## 致谢", $s2 + 5)
 if ($s2 -ge 0 -and $e2 -gt $s2) {
   $sec = $newContent.Substring($s2, $e2 - $s2)
-  [System.IO.File]::WriteAllText("$refDir\输出示例.md", "# 输出示例`r`n`r`n> 本文件是 通用-深度研究 的支撑数据，由 SKILL.md 外化所得。`r`n$sec")
+  [System.IO.File]::WriteAllText("$refDir\输出示例.md", "# 输出示例`r`n`r`n> 本文件是 общий-глубокое-исследование 的支撑数据，由 SKILL.md 外化所得。`r`n$sec")
   $short = "`r`n## 输出示例`r`n`r`n> 详见 references/输出示例.md。包含调研产出目录结构及落盘路径示例。`r`n"
   $newContent = $newContent.Replace($sec, $short)
 }
@@ -56,7 +56,7 @@ if ($s2 -ge 0 -and $e2 -gt $s2) {
 $s3 = $newContent.IndexOf("`r`n## 致谢")
 if ($s3 -ge 0) {
   $sec3 = $newContent.Substring($s3)
-  [System.IO.File]::WriteAllText("$refDir\致谢与归属.md", "# 致谢与归属`r`n`r`n> 本文件是 通用-深度研究 的原始致谢，由 SKILL.md 外化所得。`r`n$sec3")
+  [System.IO.File]::WriteAllText("$refDir\致谢与归属.md", "# 致谢与归属`r`n`r`n> 本文件是 общий-глубокое-исследование 的原始致谢，由 SKILL.md 外化所得。`r`n$sec3")
   $newContent = $newContent.Substring(0, $s3)
 }
 

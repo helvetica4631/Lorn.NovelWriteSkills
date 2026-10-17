@@ -20,9 +20,9 @@ Write-Host "`n[P4] 保真迁移要求→继续读取的 references 重命名" -F
 $p4list = @("补充构建素材库","多平台小说适配","管理连续性冷热线","润色作者有话说","设计分卷大纲","设计故事面","设计故事设定","设计事件案件引擎","设计题材定位框架","生成章节控制卡","提纯多平台母稿")
 $ok=0; $fail=0
 foreach ($s in $p4list) {
-  $p = "CommonSkills/通用-$s/SKILL.md"
+  $p = "CommonSkills/общий-$s/SKILL.md"
   $c = Get-Content $p -Raw
-  if ($c -match "## 继续读取的 references") { $ok++ } else { Write-Host "  ❌ 通用-$s"; $fail++ }
+  if ($c -match "## 继续读取的 references") { $ok++ } else { Write-Host "  ❌ общий-$s"; $fail++ }
 }
 Write-Host "  ✅ $ok 个已更新" -ForegroundColor Green
 if ($fail -gt 0) { Write-Host "  ❌ $fail 个未更新" -ForegroundColor Red }

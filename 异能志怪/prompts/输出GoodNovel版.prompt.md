@@ -21,9 +21,9 @@ agent: автор-романов
 
 ### 1.2 题材专属入口
 
-- `.github/skills/异能志怪-输出GoodNovel版/SKILL.md`
-- `.github/skills/异能志怪-输出GoodNovel版/references/题材边界与来源.md`
-- `.github/skills/异能志怪-输出GoodNovel版/references/执行细则与题材补丁.md`
+- `.github/skills/异能志怪-вывод-goodnovel/SKILL.md`
+- `.github/skills/异能志怪-вывод-goodnovel/references/границы-жанра-и-источник.md`
+- `.github/skills/异能志怪-вывод-goodnovel/references/детали-исполнения-и-жанровый-патч.md`
 
 ## 2. 执行顺序（硬性）
 

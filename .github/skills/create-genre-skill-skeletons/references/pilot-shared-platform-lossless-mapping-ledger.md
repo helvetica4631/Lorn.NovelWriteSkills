@@ -21,9 +21,9 @@
 
 | 源 Prompt | 通用 Skill | 题材 Skill | 本轮目标 | 当前状态 |
 | --- | --- | --- | --- | --- |
-| `异能志怪/.github/prompts/输出番茄版.prompt.md` | `общий-вывод-fanqie` | `异能志怪-输出番茄版` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |
-| `异能志怪/.github/prompts/输出知乎版.prompt.md` | `общий-вывод-zhihu` | `异能志怪-输出知乎版` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |
-| `异能志怪/.github/prompts/输出WebNovel版.prompt.md` | `общий-вывод-webnovel` | `异能志怪-输出WebNovel版` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |
+| `异能志怪/.github/prompts/输出番茄版.prompt.md` | `общий-вывод-fanqie` | `异能志怪-вывод-fanqie` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |
+| `异能志怪/.github/prompts/输出知乎版.prompt.md` | `общий-вывод-zhihu` | `异能志怪-вывод-zhihu` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |
+| `异能志怪/.github/prompts/输出WebNovel版.prompt.md` | `общий-вывод-webnovel` | `异能志怪-вывод-webnovel` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |
 | `都市悬疑/.github/prompts/输出番茄版.prompt.md` | `общий-вывод-fanqie` | `都市悬疑-输出番茄版` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |
 | `都市悬疑/.github/prompts/输出知乎版.prompt.md` | `общий-вывод-zhihu` | `都市悬疑-输出知乎版` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |
 | `都市悬疑/.github/prompts/输出WebNovel版.prompt.md` | `общий-вывод-webnovel` | `都市悬疑-输出WebNovel版` | 薄入口压缩 + refs 摘要化 | 未完成无损审计 |

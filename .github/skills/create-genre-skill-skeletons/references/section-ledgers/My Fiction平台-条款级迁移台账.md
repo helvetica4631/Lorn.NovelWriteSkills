@@ -14,7 +14,7 @@
 | 两题材 | 0.任务定义 | 任务定义 | 面向 My Fiction 的英文改写目标 | 通用 Skill | `CommonSkills/общий-вывод-my-fiction/SKILL.md` | 通用详细回填 refs | 是 | 已回填 |
 | 两题材 | 0.1-0.3 | 继承关系/结构 | 基准继承、零新增、英文沉浸式体裁 | references | `CommonSkills/общий-вывод-my-fiction/references/отображение-исправлений-по-разделам-и-запись-правил.md` | SOP 英文平台总则 | 是 | 已回填 |
 | 两题材 | 1.1 平台机制 | 平台共性 | 互动追更感、关系黏性、next-click drive | references | 同上 | `общие-детали-исполнения-платформы.md` | 是 | 已回填 |
-| 异能志怪 | 1.2 题材取舍 | 题材边界 | 规则压力、现实锚点、关系与规则同频 | 题材 Skill | `异能志怪/.github/skills/异能志怪-输出My Fiction版/references/分节级补救映射与详细规则回填.md` | 题材补丁 | 是 | 已回填 |
+| 异能志怪 | 1.2 题材取舍 | 题材边界 | 规则压力、现实锚点、关系与规则同频 | 题材 Skill | `异能志怪/.github/skills/异能志怪-вывод-my-fiction/references/分节级补救映射与详细规则回填.md` | 题材补丁 | 是 | 已回填 |
 | 都市悬疑 | 1.2 题材取舍 | 题材边界 | 案件推进、人物拉扯、持续追更动机 | 题材 Skill | `都市悬疑/.github/skills/都市悬疑-输出My Fiction版/references/分节级补救映射与详细规则回填.md` | 题材补丁 | 是 | 已回填 |
 | 两题材 | 2-4 | 路径/结构/语言门禁 | 输出目录、英文标题、Len 下限、零中文 | references | 通用My Fiction详细回填 refs | 薄 Prompt 兼容约束 | 是 | 已回填 |
 | 两题材 | 5 | 执行前置 | read-on drive、relationship pull、plain readable English | references | 通用My Fiction详细回填 refs | SOP | 是 | 已回填 |

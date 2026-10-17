@@ -2,7 +2,7 @@
 name: 输出My Fiction版
 description: AI科幻正文改写并落盘为更适合 My Fiction 的英文连载版本。用于互动追更感、人物关系拉力、现实调查驱动与英文平台可读性并重的正文输出。关键词：My Fiction版、AI科幻、英文平台、互动追更。'
 argument-hint: '例如：把这一章改成更适合 My Fiction 的AI科幻英文版本，并保留系统危机推进与人物压力。'
-agent: 小说作者
+agent: автор-романов
 ---
 # AI科幻小说输出“My Fiction版”统一提示词
 

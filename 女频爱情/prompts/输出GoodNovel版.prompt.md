@@ -2,7 +2,7 @@
 name: 输出GoodNovel版
 description: '将女频爱情正文改写并落盘为更适合 GoodNovel 的英文连载版本。用于关系张力、情绪黏性、成长线与英文平台追更动机并重的正文输出。'
 argument-hint: '例如：把这一章改成更适合 GoodNovel 的女频爱情英文版本，并保留成长线与关系拉扯。'
-agent: 小说作者
+agent: автор-романов
 ---
 
 # 输出 GoodNovel 版

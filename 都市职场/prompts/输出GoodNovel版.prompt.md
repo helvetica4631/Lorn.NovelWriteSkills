@@ -2,7 +2,7 @@
 name: 输出GoodNovel版
 description: '将都市职场正文改写并落盘为更适合 GoodNovel 的英文连载版本。用于关系张力、情绪黏性、现实调查压力与英文平台追更动机并重的正文输出。关键词：GoodNovel版、都市职场、英文平台、关系张力。'
 argument-hint: '例如：把这一章改成更适合 GoodNovel 的都市职场英文版本，并保留调查链与人物拉扯。'
-agent: 小说作者
+agent: автор-романов
 ---
 # 都市职场小说输出“GoodNovel版”统一提示词
 

@@ -55,7 +55,7 @@ user-invocable: false
 6. `AI科幻-去AI味重写`
 7. `AI科幻-审阅章节正文`
 8. `AI科幻-润色作者有话说`
-9. 读者侧产物：`AI科幻/.github/agents/小说读者.agent.md` + `AI科幻-撰写书评`
+9. 读者侧产物：`AI科幻/.github/agents/читатель-романов.agent.md` + `AI科幻-撰写书评`
 10. 视情况补 `AI科幻-强化章节开头` / `AI科幻-强化章末钩子`
 
 ## 连续性组合入口迁移说明

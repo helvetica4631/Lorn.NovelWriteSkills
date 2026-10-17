@@ -2,7 +2,7 @@
 name: 输出My Fiction版
 description: '将女频爱情正文改写并落盘为更适合 My Fiction 的英文连载版本。用于互动追更感、人物关系拉力、情绪黏性与英文平台可读性并重的正文输出。'
 argument-hint: '例如：把这一章改成更适合 My Fiction 的女频爱情英文版本，并保留关系推进与情绪压力。'
-agent: 小说作者
+agent: автор-романов
 ---
 
 # 输出 My Fiction 版

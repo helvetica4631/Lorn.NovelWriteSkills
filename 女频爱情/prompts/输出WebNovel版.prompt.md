@@ -2,7 +2,7 @@
 name: 输出WebNovel版
 description: '将女频爱情正文改写并落盘为适合 WebNovel 的英文连载版本。用于全球年轻读者、移动端阅读、跨文化传播、强追更语境下的成长线与关系线正文输出。'
 argument-hint: '例如：把这一章改成更适合 WebNovel 的英文版本 / 保留事实但提升国际读者可读性和追更感'
-agent: 小说作者
+agent: автор-романов
 ---
 
 # 输出 WebNovel 版

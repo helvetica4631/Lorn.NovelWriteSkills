@@ -28,8 +28,8 @@ Write-Host "  ✅ $ok 个已更新" -ForegroundColor Green
 if ($fail -gt 0) { Write-Host "  ❌ $fail 个未更新" -ForegroundColor Red }
 
 # ─── P4: 女频爱情-设计线索伏笔补引用节 ───
-Write-Host "`n[P4] 女频爱情-设计线索伏笔与回收台账 补 references 节" -ForegroundColor Yellow
-$c = Get-Content "女频爱情/skills/女频爱情-设计线索伏笔与回收台账/SKILL.md" -Raw
+Write-Host "`n[P4] 女频爱情-проектирование-реестра-улик-и-завязок 补 references 节" -ForegroundColor Yellow
+$c = Get-Content "女频爱情/skills/女频爱情-проектирование-реестра-улик-и-завязок/SKILL.md" -Raw
 if ($c -match "继续读取的题材 references") { Write-Host "  ✅ 已补齐" -ForegroundColor Green } else { Write-Host "  ❌ 仍缺失" -ForegroundColor Red }
 
 # ─── P2: create-genre-skill-skeletons DEAD 文件 ───
@@ -79,8 +79,8 @@ Write-Host "  ✅ $ok 个已引用" -ForegroundColor Green
 if ($fail -gt 0) { Write-Host "  ❌ $fail 个缺失" -ForegroundColor Red }
 
 # ─── P3: 正文润色 3 个文件 ───
-Write-Host "`n[P3] 女频爱情-正文润色 补引用" -ForegroundColor Yellow
-$c = Get-Content "女频爱情/skills/女频爱情-正文润色/SKILL.md" -Raw
+Write-Host "`n[P3] 女频爱情-шлифовка-основного-текста 补引用" -ForegroundColor Yellow
+$c = Get-Content "女频爱情/skills/女频爱情-шлифовка-основного-текста/SKILL.md" -Raw
 $zr = @("数值双轨禁忌","增强技法","执行流程")
 $ok=0
 foreach ($t in $zr) { if ($c -match $t) { $ok++ } }

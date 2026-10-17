@@ -9,10 +9,16 @@ gpath='.github/translation-workflow/rename-files-genre.tsv'
 if os.path.exists(gpath): files.update(dict(rd(gpath)))
 # unmapped chinese-named reference files in G
 cjk=re.compile(r'[一-鿿]')
+# каталоги, которые не переводятся и не переименовываются
+SKIP_ALL={'写作研究','shuorenhua-main','Humanizer-zh-main','humanizer-main','stop-slop-main','taste-skill-main'}
+NO_RENAME={'prompts'}
+def skipped(path,names): return any(n in path.split(os.sep) for n in names)
+def corpus(f): return f.endswith('好词好句好段.md')
 unm=set()
 for root,ds,fs in os.walk(G):
+    if skipped(root,SKIP_ALL|NO_RENAME): continue
     for f in fs:
-        if f=='SKILL.md': continue
+        if f=='SKILL.md' or corpus(f): continue
         if cjk.search(f) and f not in files and not f.endswith('.instructions.md'): unm.add(f)
 if mode=='list':
     print('\n'.join(sorted(unm))); sys.exit()
@@ -34,6 +40,7 @@ qual=re.compile(r'(общий-[^/\\\s`\'"()\[\]]+[/\\](?:references|assets)[/\\]
 n=0
 for root,ds,fs in os.walk('.'):
     if '.git' in root.split(os.sep): continue
+    if skipped(root,SKIP_ALL): continue
     inG=root==G or root.startswith(G+os.sep)
     for f in fs:
         p=os.path.join(root,f)
@@ -57,7 +64,8 @@ for d in os.listdir(f'{G}/skills'):
         if new and new!=s: subprocess.check_call(['git','mv',f'{G}/skills/{s}',f'{G}/skills/{new}'])
 c=0
 for root,ds,fs in os.walk(G):
+    if skipped(root,SKIP_ALL|NO_RENAME): continue
     for f in fs:
-        if f in files and f!='SKILL.md':
+        if f in files and f!='SKILL.md' and not corpus(f):
             subprocess.check_call(['git','mv',os.path.join(root,f),os.path.join(root,files[f])]); c+=1
 print('files renamed',c)

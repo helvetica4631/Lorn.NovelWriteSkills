@@ -25,8 +25,8 @@ agent: автор-романов
 ### 1.2 题材专属入口
 
 - `.github/skills/AI科幻-вывод-my-fiction/SKILL.md`
-- `.github/skills/AI科幻-вывод-my-fiction/references/题材边界与来源.md`
-- `.github/skills/AI科幻-вывод-my-fiction/references/执行细则与题材补丁.md`
+- `.github/skills/AI科幻-вывод-my-fiction/references/границы-жанра-и-источник.md`
+- `.github/skills/AI科幻-вывод-my-fiction/references/детали-исполнения-и-жанровый-патч.md`
 
 ## 2. 执行顺序（硬性）
 

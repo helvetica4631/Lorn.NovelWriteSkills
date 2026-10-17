@@ -39,6 +39,7 @@ qual=re.compile(r'(общий-[^/\\\s`\'"()\[\]]+[/\\](?:references|assets)[/\\]
 # dirs of common refs already renamed, so bare names inside G refer to local files -> rename too
 n=0
 for root,ds,fs in os.walk('.'):
+    root=os.path.normpath(root)
     if '.git' in root.split(os.sep): continue
     if skipped(root,SKIP_ALL): continue
     inG=root==G or root.startswith(G+os.sep)

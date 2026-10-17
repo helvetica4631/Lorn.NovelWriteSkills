@@ -104,6 +104,12 @@ elif cmd=='prep':         # prep REPO_PATH  -> prints missing lines
 elif cmd=='done':         # done REPO_PATH EXTRA_TSV
     path,extra=sys.argv[2],sys.argv[3]
     lines=orig(path); part=load_tsv(os.path.join(S,'part_'+key(path)+'.tsv')); part.update(load_tsv(extra))
+    # строки, уже переведённые в предыдущих проходах (в том числе короче 6 знаков, которых нет в памяти переводов), сохраняем
+    try: cur=open(os.path.join(REPO,path),encoding='utf-8').read().split('\n')
+    except Exception: cur=None
+    if cur is not None and len(cur)==len(lines):
+        for i,(a,b) in enumerate(zip(lines,cur),1):
+            if i not in part and a!=b and han(a) and not han(b) and b.strip(): part[i]=b
     out=list(lines)
     for n,t in part.items():
         l0=lines[n-1]; out[n-1]=l0[:len(l0)-len(l0.lstrip(' \t'))]+t.lstrip(' \t') if t.strip() else t   # отступ — как в оригинале

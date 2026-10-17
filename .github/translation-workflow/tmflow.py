@@ -19,12 +19,43 @@ def load_tsv(p):
             if r.strip():
                 n,_,t=r.partition('\t'); d[int(n)]=t
     return d
+
+GENRES=['AI科幻','太空科幻','悬疑推理','赛博庞克','女频爱情','异能志怪','都市职场','都市悬疑']
+def _skill_suffixes():
+    f=os.path.join(REPO,'.github','translation-workflow','rename-skills.tsv')
+    out=[]
+    for r in open(f,encoding='utf-8').read().split('\n'):
+        if r.strip(): out.append(r.split('\t')[0][3:])
+    return sorted(set(out),key=len,reverse=True)
+_NAME_RE=None
+def name_re():
+    global _NAME_RE
+    if _NAME_RE is None:
+        _NAME_RE=re.compile('(?:通用|'+'|'.join(GENRES)+')-(?:'+'|'.join(re.escape(s) for s in _skill_suffixes())+')')
+    return _NAME_RE
+def nm_key(l):
+    """Строка с именами skill, заменёнными на {N0},{N1}…; возвращает (ключ, список имён) или (None, [])."""
+    names=[]
+    def rep(m):
+        n=m.group(0)
+        if n not in names: names.append(n)
+        return '{N%d}'%names.index(n)
+    k=name_re().sub(rep,l)
+    if not names: return None,[]
+    rest=re.sub(r'\{N\d+\}','',k)
+    if sum(1 for c in rest if '一'<=c<='鿿')<4: return None,[]
+    return norm(k),names
 def tm_add(lines,tr,path=''):
     tm=load_tm(); zh,ru=plat_of(path)
     for n,t in tr.items():
         l=lines[n-1]
         if han(l) and not l.startswith(('name:','tools:')) and len(norm(l))>=6:
             tm.setdefault(norm(l),t)
+            nk,names=nm_key(l)
+            if nk:
+                tn=t
+                for i,nme in enumerate(names): tn=tn.replace(nme,'{N%d}'%i)
+                tm.setdefault('N::'+nk,tn)
             if zh and any(v in l for v in zvars(zh)):
                 tv=t
                 for v in zvars(zh): tv=tv.replace(v,'{Z}')
@@ -52,6 +83,12 @@ elif cmd=='prep':         # prep REPO_PATH  -> prints missing lines
         if han(l) and not l.startswith(('name:','tools:')):
             if norm(l) in tm: part[i]=tm[norm(l)]
             elif zh0 and 'P::'+tkey(l,zh0) in tm and any(v in l for v in zvars(zh0)): part[i]=tm['P::'+tkey(l,zh0)].replace('{P}',ru0).replace('{Z}',zh0)
+            else:
+                nk,names=nm_key(l)
+                if nk and 'N::'+nk in tm:
+                    v=tm['N::'+nk]
+                    for j,nme in enumerate(names): v=v.replace('{N%d}'%j,nme)
+                    part[i]=v
     open(os.path.join(S,'part_'+key(path)+'.tsv'),'w',encoding='utf-8').write('\n'.join(f'{n}\t{t}' for n,t in sorted(part.items()))+'\n')
     miss=[(i,l) for i,l in enumerate(lines,1) if han(l) and i not in part and not l.startswith(('name:','tools:')) and not re.match(r'^\s*(- |\d+\. )?`[^`\s→]+`\s*$',l) and not re.match(r'^# общий-',l)]
     print(f'# {path}: {len(lines)} lines, {len(part)} from TM, {len(miss)} to translate')

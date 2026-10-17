@@ -15,7 +15,7 @@
 .PARAMETER OnlyGenreWrappers
   只处理题材包装层
 .PARAMETER OnlyDistro
-  只处理小说分发技能
+  只处理распространение-романов技能
 #>
 
 param(
@@ -50,8 +50,8 @@ if (-not $OnlyCommonSkills -and -not $OnlyDistro) {
 }
 
 if (-not $OnlyCommonSkills -and -not $OnlyGenreWrappers) {
-  # 小说分发技能
-  $dd = Join-Path $Path "小说分发"
+  # распространение-романов技能
+  $dd = Join-Path $Path "распространение-романов"
   if (Test-Path $dd) { $SearchRoots += $dd }
   # 内建工具技能
   $bd = Join-Path $Path ".github" "skills"

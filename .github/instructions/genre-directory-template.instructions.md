@@ -1,5 +1,5 @@
 ---
-description: "Use when creating, expanding, reviewing, or reorganizing a genre directory, topic folder, 题材目录, 写作研究 folder, or new subject-specific writing assets in this repository. Covers top-level genre naming, default folder template, what belongs in genre folders, and how to avoid mixing genre assets with CommonSkills, scripts, or 仅用于参考."
+description: "Use when creating, expanding, reviewing, or reorganizing a genre directory, topic folder, 题材目录, исследования-письма folder, or new subject-specific writing assets in this repository. Covers top-level genre naming, default folder template, what belongs in genre folders, and how to avoid mixing genre assets with CommonSkills, scripts, or 仅用于参考."
 name: "Шаблон нового каталога жанра"
 ---
 
@@ -35,7 +35,7 @@ name: "Шаблон нового каталога жанра"
 
 ```text
 题材名/
-  写作研究/
+  исследования-письма/
   ·prompts/
   skills/
   agents/
@@ -44,7 +44,7 @@ name: "Шаблон нового каталога жанра"
 
 Пояснения:
 
-- `写作研究/` — место по умолчанию для исследовательских материалов.
+- `исследования-письма/` — место по умолчанию для исследовательских материалов.
 - `prompts/` — для Prompt, специфичных для жанра.
 - `skills/` — для Skill, специфичных для жанра.
 - `agents/` — для Agent, специфичных для жанра.
@@ -92,7 +92,7 @@ name: "Шаблон нового каталога жанра"
 - Действительно ли содержимое специфично для жанра, а не является общей возможностью.
 - Написано ли имя каталога первого уровня по-китайски.
 - Нет ли повторов с существующими каталогами жанров и не слишком ли они близки по смыслу.
-- Есть ли хотя бы `写作研究/`.
+- Есть ли хотя бы `исследования-письма/`.
 - Включены ли по необходимости `prompts/`, `skills/`, `agents/`, `instructions/`.
 - Не попало ли сюда то, что должно лежать в `CommonSkills/`, `scripts/` или `仅用于参考/`.
 - Если позже планируется добавлять в этот каталог жанра Skill или шаблоны, заранее ли продумано, какие части на самом деле следует сначала закрепить как общий Skill.
@@ -102,7 +102,7 @@ name: "Шаблон нового каталога жанра"
 
 1. Сначала определи название жанра.
 2. Создай каталог жанра первого уровня.
-3. Создай `写作研究/`.
+3. Создай `исследования-письма/`.
 4. Создай `prompts/`, `skills/`, `agents/`, `instructions/`.
 5. В этих каталогах добавляй содержимое по необходимости.
 6. Затем по реальным потребностям добавляй жанровые Skill, промпты, Agent, локальные правила или справочные материалы.

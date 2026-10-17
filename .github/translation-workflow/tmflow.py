@@ -7,7 +7,15 @@ def norm(s):
     s=s.replace('“','"').replace('”','"').replace('‘',"'").replace('’',"'")
     return re.sub(r'\s+',' ',s).strip()
 def han(s): return any('一'<=c<='鿿' for c in s)
+def _rev_dirs():
+    f=os.path.join(REPO,'.github','translation-workflow','rename-dirs.tsv')
+    return {b:a for a,b in (r.split('\t') for r in open(f,encoding='utf-8').read().split('\n') if r.strip())}
+def orig_path(path):
+    """Текущий путь (с русскими именами папок) -> путь в исходном коммите."""
+    rev=_rev_dirs(); parts=path.split('/')
+    return '/'.join([rev.get(p,p) for p in parts[:-1]]+[parts[-1]])
 def orig(path):
+    path=orig_path(path)
     return subprocess.run(['git','-C',REPO,'show',f'{BASE}:{path}'],capture_output=True).stdout.decode('utf-8').split('\n')
 def load_tm():
     return json.load(open(TM,encoding='utf-8')) if os.path.exists(TM) else {}

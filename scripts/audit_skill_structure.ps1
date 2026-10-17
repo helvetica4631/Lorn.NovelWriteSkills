@@ -138,7 +138,7 @@ function Get-SkillCategory {
   param([string]$DirPath)
   $dirName = Split-Path $DirPath -Leaf
   if ($DirPath -match 'CommonSkills') { return "CommonSkill" }
-  if ($DirPath -match '小说分发') { return "Distribution" }
+  if ($DirPath -match 'распространение-романов') { return "Distribution" }
   if ($DirPath -match '仅用于参考') { return "External" }
   if ($DirPath -match 'общий-глубокое-исследование\\[^\\]+$') { return "DeepResearch" }
   if ($DirPath -match 'vibe-writing') { return "External" }

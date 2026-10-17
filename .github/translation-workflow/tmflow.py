@@ -105,7 +105,8 @@ elif cmd=='done':         # done REPO_PATH EXTRA_TSV
     path,extra=sys.argv[2],sys.argv[3]
     lines=orig(path); part=load_tsv(os.path.join(S,'part_'+key(path)+'.tsv')); part.update(load_tsv(extra))
     out=list(lines)
-    for n,t in part.items(): out[n-1]=t
+    for n,t in part.items():
+        l0=lines[n-1]; out[n-1]=l0[:len(l0)-len(l0.lstrip(' \t'))]+t.lstrip(' \t') if t.strip() else t   # отступ — как в оригинале
     open(os.path.join(REPO,path),'w',encoding='utf-8').write('\n'.join(out))
     tm_add(lines,part,path)
     def cy(l): return sum('Ѐ'<=c<='ӿ' for c in l)
